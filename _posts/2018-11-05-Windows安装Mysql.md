@@ -34,11 +34,11 @@ tags:
 > 下载mysql-installer-community,32位安装包即可,MSI是32位的,但是会同时安装32位和64位
 
 ### 1. 同意协议
-[![1](1 "同意协议")](/img/blog/20181105_windows_mysql/windows_mysql_msi_1.png "同意协议")
+![](/img/blog/20181105_windows_mysql/windows_mysql_msi_1.png)
 > 勾选同意协议,点击NEXT按钮
 
 ### 2. 选择设置类型
-[![2]( )](/img/blog/\20181105_windows_mysql/windows_mysql_msi_2.png)
+![](/img/blog/\20181105_windows_mysql/windows_mysql_msi_2.png)
 > MySQL会默认选择“Developer Default”类型，可根据自己的需求选择合适的类型，这里选择“Server only”后点击“next”。
 
 * Developer Default：安装MySQL服务器以及开发MySQL应用所需的工具。工具包括开发和管理服务器的GUI工作台、访问操作数据的Excel插件、与Visual Studio集成开发的插件、通过NET/Java/C/C++/OBDC等访问数据的连接器、例子和教程、开发文档。
@@ -48,10 +48,10 @@ tags:
 * Custom：自定义需要安装的组件。
 
 ### 3. 检查环境要求
-[![3]( )](/img/blog/\20181105_windows_mysql/windows_mysql_msi_3.png)
+![](/img/blog/\20181105_windows_mysql/windows_mysql_msi_3.png)
 > 这一步,安装程序检查环境要求,列出欠缺的依赖环境,选择列表中的项,点击Execute按钮进行安装
 
-[![4]( )](/img/blog/\20181105_windows_mysql/windows_mysql_msi_4.png)
+![4](/img/blog/\20181105_windows_mysql/windows_mysql_msi_4.png)
 
 
 ### 4.
