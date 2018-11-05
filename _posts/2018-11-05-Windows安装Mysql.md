@@ -88,6 +88,8 @@ tags:
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_12.png)
 > 将MySQL服务配置成Windows服务后，MySQL服务会自动随着Windows操作系统的启动而启动，随着操作系统的停止而停止，这也是MySQL官方文档建议的配置
 
+> 接下来是账户设置,我们这里只需要设置Root用户密码即可,后面需要再添加其他账号,输入两次要设置的Root账号的密码之后,点击next
+
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_13.png)
 > 插件和扩展这里不需要用到,直接点击Next
 
@@ -106,8 +108,9 @@ tags:
 ### --收尾
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_18.png)
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_19.png)
-
-
+> 最后点击Finish后安装成功,至此,mysql会随着系统启动而启动,我们也可以通过命令控制
+> net start mysql57  --开启
+> net stop mysql57   --关闭
 
 
 
