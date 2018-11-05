@@ -12,32 +12,32 @@ tags:
 ---
 
 
-## -前言
+## 前言
 
 > 之前在Windows下开发PHP都是用的WAMP集成环境,业务需要单独安装配置MySQL,记录以备忘.
 
 > [MySQL5.7下载页](https://dev.mysql.com/downloads/mysql/5.7.html#downloads "MySQL5.7下载页")  , [MySQL57.zip](https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.24-winx64.zip "MySQL57下载")  ,[MySQL5.7 MSI安装包下载页](https://dev.mysql.com/downloads/windows/installer/5.7.html "MySQL5.7 MSI安装包下载页面")  , [MySQL5.7MSI 文件](https://cdn.mysql.com//Downloads/MySQLInstaller/mysql-installer-community-5.7.24.0.msi "MySQL5.7 MSI 文件")
 
-## -控制命令
-###    系统命令
+## 控制命令
+### 系统命令
 > net start mysql57  --开启
 > net stop mysql57   --关闭
 
-### -  直接定位到bin目录(msi安装默认目录: C:\Program Files\MySQL\MySQL Server 5.7\bin)
+### 直接定位到bin目录(msi安装默认目录: C:\Program Files\MySQL\MySQL Server 5.7\bin)
 > mysqladmin shutdown --开启
 > mysqladmin start	  --关闭
 
-## -解压包配置安装
+## 解压包配置安装
 > 根据系统下载对应的32位或者64位压缩包
 
-## -MSI安装
+## MSI安装
 > 下载mysql-installer-community,32位安装包即可,MSI是32位的,但是会同时安装32位和64位
 
-### -  同意协议
+### 同意协议
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_1.png)
 > 勾选同意协议,点击NEXT按钮
 
-### -  选择设置类型
+### 选择设置类型
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_2.png)
 > MySQL会默认选择“Developer Default”类型，可根据自己的需求选择合适的类型，这里选择“Server only”后点击“next”。
 
@@ -47,7 +47,7 @@ tags:
 * Full：安装MySQL所有可用组件。
 * Custom：自定义需要安装的组件。
 
-### -  检查环境要求
+### 检查环境要求
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_3.png)
 > 这一步,安装程序检查环境要求,列出欠缺的依赖环境,选择列表中的项,点击Execute按钮进行安装
 
@@ -55,7 +55,7 @@ tags:
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_5.png)
 > 所有依赖安装完成,点击Next按钮进行下一步
 
-### -  安装
+### 安装
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_6.png)
 > 点击Execute按钮进行安装
 
@@ -63,7 +63,7 @@ tags:
 
 > 点击Next按钮进入下一步配置
 
-### -  配置
+### 配置
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_8.png)
 > 点击Next按钮进入下一步配置
 
@@ -105,7 +105,7 @@ tags:
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_17.png)
 > 配置完成点击Finish
 
-### -  收尾
+### 收尾
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_18.png)
 ![](/img/blog/20181105_windows_mysql/windows_mysql_msi_19.png)
 > 最后点击Finish后安装成功,至此,mysql会随着系统启动而启动,我们也可以通过命令控制
