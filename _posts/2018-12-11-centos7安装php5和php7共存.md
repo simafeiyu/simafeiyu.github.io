@@ -7,8 +7,8 @@ author:     simafeiyu
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - centos7
-    - php
+    - CentOS7
+    - PHP开发
     
 ---
 
