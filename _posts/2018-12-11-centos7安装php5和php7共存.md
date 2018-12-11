@@ -8,7 +8,8 @@ header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
     - centos7
-	- php
+    - php
+    
 ---
 
 
@@ -49,7 +50,7 @@ tags:
 * vi /usr/local/php7/etc/php-fpm.conf
 
 ---
-	;include=/usr/local/php7/etc/php-fpm.d/*.conf
+    ;include=/usr/local/php7/etc/php-fpm.d/*.conf
     [nginx]
     	user = nginx
     	group = nginx
