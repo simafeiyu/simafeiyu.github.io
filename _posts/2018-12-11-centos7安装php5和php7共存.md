@@ -47,8 +47,8 @@ tags:
 #### 处理php-fpm.conf
 * cp /usr/local/php7/etc/php-fpm.conf.default /usr/local/php7/etc/php-fpm.conf
 * vi /usr/local/php7/etc/php-fpm.conf
----
 
+---
 	;include=/usr/local/php7/etc/php-fpm.d/*.conf
     [nginx]
     	user = nginx
