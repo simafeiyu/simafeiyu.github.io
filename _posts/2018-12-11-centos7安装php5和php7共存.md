@@ -39,8 +39,8 @@ tags:
 
 ## 配置
 #### 处理php.ini
-* cp php.ini-development /usr/local/php7/lib/php.ini  --在php-7.1.19目录
-* vi /usr/local/php7/lib/php.ini
+* cp php.ini-development /usr/local/php7/etc/php.ini  --在php-7.1.19目录
+* vi /usr/local/php7/etc/php.ini
 * 找到mysql.default_socket 和 mysqli.default_socket,
 	* mysql.default_socket = /var/lib/mysql/mysql.sock
 	* mysqli.default_socket = /var/lib/mysql/mysql.sock
@@ -86,7 +86,35 @@ tags:
 * php7 --version
 * netstat -tnlp 查看9001的php-fpm有没有启动
 
+#### 安装swoole
+* 安装
+---
+	/usr/local/php7/bin/phpize && \
+	./configure \
+	--with-php-config=/usr/local/php7/bin/php-config \
+	--enable-coroutine \
+	--enable-openssl  && \
+	make && sudo make install
 
+* 配置php.ini
+	* vi /usr/local/php7/etc/php.ini 
+	* 添加: extendsion = swoole.so
+
+#### 安装redis扩张
+* 安装
+
+---
+ wget https://github.com/nicolasff/phpredis/archive/master.zip && \
+ unzip master.zip && \
+ cd phpredis-master && \
+ /usr/local/php7/bin/phpize && \
+./configure --with-php-config=/usr/local/php7/bin/php-config && \
+  make && make install
+
+
+* 配置php.ini
+	* vi /usr/local/php7/etc/php.ini 
+	* 添加: extendsion = swoole.so
 
 
 
