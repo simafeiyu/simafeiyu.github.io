@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      centos7安装php5.6和php7.1共存
+title:      centos7安装php5和php7共存
 subtitle:   
 date:       2018-12-11
 author:     simafeiyu
